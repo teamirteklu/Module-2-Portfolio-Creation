@@ -7,15 +7,61 @@
   --light: rgba(238, 238, 247, 1);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--light);
+  background-color: var(--dark);
+  line-height: 1.5;
+}
 
-.music-project-image {
-    background-image: url("../images/music-project-image.png");
+ .page-wrap {
+    width: 80%;
+    margin: 0 auto;
   }
 
-/*--------------------------------------------------------------------*/
+.music-project-image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  height: 150px;
+  background-image: url("../images/music-project-image.png");
+  background-repeat: no-repeat;
+  }
 
+  .self-image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/self-image.jpg");
+  background-repeat: no-repeat;
+  }
+
+  .flex-item {
+    color: var(--tertiary);
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 100%;
+  }
+
+
+  .link {
+    color: var(--light);
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  /*--------------------------------------------------------------------*/
+/*header*/
   header {
     padding: 15px 6% 15px 0;
+    margin-bottom: 30px; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,18 +81,7 @@
   }
 
   /*--------------------------------------------------------------------*/
-
-@keyframes animate{
-    0%{
-      opacity: 0;
-    }
-    50%{
-      opacity: 0.7;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
+/*navbar*/
 
   nav {
     display: flex;
@@ -69,12 +104,25 @@
     background-size: 100% 100%;
     animation: animate 1.5s linear infinite;
   }
-  
+
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
   nav a:last-child {
     margin-right: 0;
   }
   
   /*--------------------------------------------------------------------*/
+/*responsive elements*/
 
 @media screen and (max-width: 980px) {
     header {
@@ -107,4 +155,29 @@
       text-align: left;
       font-size: 7vw;
     }
+  }
+
+  /*--------------------------------------------------------------------*/
+/*about me*/
+
+  .body-section-1 {
+    background-color: var(--tertiary);
+    margin: 10px;
+    padding: 10px;
+    border: 9px solid var(--light);
+  }
+
+  .body-section-1 div {
+    width: 70%;
+  }
+
+  .body-section-2 {
+    background-color: var(--tertiary);
+    margin: 10px;
+    padding: 10px;
+    border: 9px solid var(--light);
+  }
+
+  .aside {
+    float: right;
   }
