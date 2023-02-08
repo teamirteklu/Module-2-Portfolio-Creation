@@ -35,10 +35,14 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
+  margin-left: 5px;
   width: 200px;
-  height: 200px;
+  height: 175px;
+  display: inline-flex;
   background-image: url("../images/self-image.jpg");
   background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-size: 100%;
   }
 
   .flex-item {
@@ -162,8 +166,8 @@ body {
 
   .body-section-1 {
     background-color: var(--tertiary);
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
     border: 9px solid var(--light);
   }
 
